@@ -20,10 +20,10 @@
 
     function getECount(arr, target) {
         const strWithEArr = [];
-
+     
         for (let word of arr) {
             for (let char of word) {
-                if (char === target && target !== char[0]) {
+                if (char === target && target !== arr[0]) {
                     strWithEArr.push(word);
                 }
             }
@@ -56,4 +56,4 @@
         return letterCount;
     }
 
-    console.log(countOccurances('asciiaske'));
+    // console.log(countOccurances('asciiaske'));
