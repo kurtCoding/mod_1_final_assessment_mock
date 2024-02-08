@@ -6,7 +6,7 @@
 // 'kiera gonzalez' => 'Kiera Gonzalez'
 
     function capitalizedStr(str) {
-        return str.split(" ").map((word) => charAt(0).toUpperCase) + str.slice(1).join(" ");
+        return str.split(" ").map((word) => word[0].toUpperCase) + str.slice(1).join(" ");
     }
 
     // console.log(capitalizedStr('mickey mouse'));
@@ -18,9 +18,20 @@
 
 // ['red', 'lindsay', 'equine', 'drip'] => ['red'] 
 
+    function getECount(arr, target) {
+        const strWithEArr = [];
 
+        for (let word of arr) {
+            for (let char of word) {
+                if (char === target && target !== char[0]) {
+                    strWithEArr.push(word);
+                }
+            }
+        }
+        return strWithEArr;
+    }
 
-
+    // console.log(getECount(["ellen", "jane", "zigland", "pedestrian"], "e"));
 // 3. Write a function that takes a string of lowercase letters, and returns an object with a count of how many times each letter appears
 
 // 'asciiaske' => {
