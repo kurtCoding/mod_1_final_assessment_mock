@@ -42,3 +42,18 @@
 //   'k' : 1, 
 //   'e' : 1
 // }
+
+    function countOccurances(str) {
+        const letterCount = {};
+
+        for (let ele of str) {
+            if (!letterCount[ele]) {
+                letterCount[ele] = 1;
+            } else {
+                letterCount[ele]++
+            }
+        }
+        return letterCount;
+    }
+
+    console.log(countOccurances('asciiaske'));
