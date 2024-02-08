@@ -5,11 +5,21 @@
 // 'mickey mouse' => 'Mickey Mouse'
 // 'kiera gonzalez' => 'Kiera Gonzalez'
 
+    function capitalizedStr(str) {
+        return str.split(" ").map((word) => charAt(0).toUpperCase) + str.slice(1).join(" ");
+    }
+
+    // console.log(capitalizedStr('mickey mouse'));
+    // console.log(capitalizedStr('kiera gonzalez'));
+
 // 2. Write a function that takes an array of lowercase words, return the words that have one or more 'e' but do not start with 'e'.
 
 // ["ellen", "jane", "zigland", "pedestrian"] => ["jane", "pedestrian"]
 
 // ['red', 'lindsay', 'equine', 'drip'] => ['red'] 
+
+
+
 
 // 3. Write a function that takes a string of lowercase letters, and returns an object with a count of how many times each letter appears
 
